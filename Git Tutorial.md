@@ -79,3 +79,20 @@ git push --set-upstream git@github.com:mr4dot/crypto_notes.git master
 ```
 
 
+### OR 
+```shell 
+echo "# crypto_notes" >> README.md
+
+git branch -m master
+
+git init
+
+git add README.md
+
+git commit -m "first commit"
+
+git remote add origin git@github.com:mr4dot/crypto_notes.git
+
+git push -u origin master
+
+```
