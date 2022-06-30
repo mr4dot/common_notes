@@ -14,7 +14,7 @@ Default output format [None]:
 mr4dot@machine PNPT % 
 ```
 
-### S3 File Upload 
+### S3 File Upload Download only mod
 ```shell
 mr4dot@machine % aws s3 cp <local file path> s3://cdn.domain.com/twitch-live-full/<filename> --acl public-read --storage-class INTELLIGENT_TIERING --no-guess-mime-type --content-type="application/octet-stream" --metadata-directive="REPLACE"
 upload: ./index.php to s3://cdn.vengalath.com/twitch-live-full/index.php
