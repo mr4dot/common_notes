@@ -93,6 +93,10 @@ git commit -m "first commit"
 
 git remote add origin git@github.com:mr4dot/crypto_notes.git
 
-git push -u origin master
+# first upload
+git push -u origin master 
 
+# if force upload use -f 
+
+git push -u -f origin master
 ```
