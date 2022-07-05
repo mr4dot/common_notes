@@ -1,4 +1,4 @@
-# Git Tutorial
+# AWS CLI Usage
 
 ### Initial configuration
 
