@@ -11,7 +11,7 @@ Installation Guide link : [Azure CLI](https://docs.microsoft.com/en-us/cli/azure
 brew update && brew install azure-cli
 ```
 
-#### Login to azure using vitual code terminal 
+#### Login to azure using VSCode terminal 
 
 ```bash 
 mr4dot@machine ~ % az login 
@@ -272,7 +272,11 @@ azurerm_resource_group.mr4dot-rg
 azurerm_virtual_network.mr4dot-vn
 mr4dot@machine Terraform-Azure % 
 ```
-###### Tip Use `terraform state show <resource name>` command for show all detailes of selected 
+
+Terraform State : [Terraform State Docs](https://www.terraform.io/language/state)
+
+###### Tip Use `terraform show` command for show all detailes.
+###### Tip Use `terraform state show <resource name>` command for show all detailes of selected.
 ```bash 
 mr4dot@machine Terraform-Azure % terraform state list
 azurerm_resource_group.mr4dot-rg
@@ -297,4 +301,8 @@ resource "azurerm_virtual_network" "mr4dot-vn" {
 }
 mr4dot@machine Terraform-Azure % 
 ```
+
+#### `Note : following steps are used for delete all we created from azure`
+
+Terraform Destroy Docs : [Terraform CLI destroy](https://www.terraform.io/cli/commands/destroy)
 
