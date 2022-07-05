@@ -16,11 +16,11 @@ mr4dot@machine PNPT %
 
 ### S3 File Upload (Normal)
 ```shell
-mr4dot@machine % aws s3 cp wa1.mp4 s3://cdn.vengalath.com/f/t/wa1.mp4 --acl public-read --storage-class INTELLIGENT_TIERING
+mr4dot@machine % aws s3 cp wa1.mp4 s3://cdn.example.com/f/t/wa1.mp4 --acl public-read --storage-class INTELLIGENT_TIERING
 
 out put eg :-
 
-upload: ./<filename> to s3://cdn.vengalath.com/<filename>
+upload: ./<filename> to s3://cdn.example.com/<filename>
 ```
 
 ### S3 File Upload Download only mod
@@ -29,7 +29,7 @@ mr4dot@machine % aws s3 cp <local file path> s3://cdn.domain.com/<filename> --ac
 
 out put eg :-
 
-upload: ./<filename> to s3://cdn.vengalath.com/<filename>
+upload: ./<filename> to s3://cdn.example.com/<filename>
 
 ```
 
