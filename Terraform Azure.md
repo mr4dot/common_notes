@@ -263,3 +263,38 @@ mr4dot@machine Terraform-Azure %
 #### Screenshots in portal
 ![[Pasted image 20220704200834.png]]
 ![[Pasted image 20220704200812.png]]
+
+###### Tip : Use `terraform state list`  command is used to list resources within a Terraform state.
+
+```bash 
+mr4dot@machine Terraform-Azure % terraform state list
+azurerm_resource_group.mr4dot-rg
+azurerm_virtual_network.mr4dot-vn
+mr4dot@machine Terraform-Azure % 
+```
+###### Tip Use `terraform state show <resource name>` command for show all detailes of selected 
+```bash 
+mr4dot@machine Terraform-Azure % terraform state list
+azurerm_resource_group.mr4dot-rg
+azurerm_virtual_network.mr4dot-vn
+mr4dot@machine Terraform-Azure % terraform state show azurerm_virtual_network.mr4dot-vn
+# azurerm_virtual_network.mr4dot-vn:
+resource "azurerm_virtual_network" "mr4dot-vn" {
+    address_space           = [
+        "10.10.10.0/24",
+    ]
+    dns_servers             = []
+    flow_timeout_in_minutes = 0
+    guid                    = "4bf9bc63-0aaa-44df-8761-0d3f7215bc04"
+    id                      = "/subscriptions/1f2a6ed1-90fe-411a-b4cf-28b5b40b83e0/resourceGroups/mr4dot-resource/providers/Microsoft.Network/virtualNetworks/mr4dot-network"
+    location                = "eastasia"
+    name                    = "mr4dot-network"
+    resource_group_name     = "mr4dot-resource"
+    subnet                  = []
+    tags                    = {
+        "environment" = "ad_tcm"
+    }
+}
+mr4dot@machine Terraform-Azure % 
+```
+
