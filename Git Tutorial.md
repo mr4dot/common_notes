@@ -2,7 +2,7 @@
 
 ### Initial configuration (SSH)
 
-** You have to create one ssh key using `ssh-keygen` copy the is_rsa.pub and paste in ** [Settings of SSH ssh-key](https://github.com/settings/keys)
+**You have to create one ssh key using `ssh-keygen` copy the is_rsa.pub and paste in** [Settings of SSH ssh-key](https://github.com/settings/keys)
 
 
 

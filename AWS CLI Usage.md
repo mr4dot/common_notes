@@ -2,7 +2,7 @@
 
 ### Initial configuration
 
-** Download and install aws cli : **  [AWS CLI Download link](https://awscli.amazonaws.com/AWSCLIV2.pkg)
+**Download and install aws cli :**  [AWS CLI Download link](https://awscli.amazonaws.com/AWSCLIV2.pkg)
 
 ### Configuration 
 ```shell
