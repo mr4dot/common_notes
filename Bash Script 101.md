@@ -91,6 +91,6 @@ hello, world !!
 ┌──(root💀kali)-[~/bash]
 └─# 
 ```
-**Use Single quots('),Double Quots(") and without Quots. `note : only for echo `**
+
 
 
