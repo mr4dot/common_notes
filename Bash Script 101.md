@@ -92,5 +92,6 @@ hello, world !!
 └─# 
 ```
 **Use Single quots('),Double Quots(") and without Quots.
-`note : echo `
+`note : only for echo `
+
 
